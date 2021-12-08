@@ -55,24 +55,24 @@ function Register(){
     }
 
     return(
-        <div className="_loginRegister">
-            <h1>Sign Up</h1>
+        <div className="container">
+            <h1 className="text-center">Sign Up</h1>
             <form onSubmit={submitForm} noValidate>
-                <div className="form-control">
+                <div className="form-group">
                     <label>Full Name</label>
-                    <input name="name" required type="text" value={state.userInfo.name} onChange={onChangeValue} placeholder="Enter your name"/>
+                    <input className='form-control' name="name" required type="text" value={state.userInfo.name} onChange={onChangeValue} placeholder="Enter your name"/>
                 </div>
-                <div className="form-control">
+                <div className="form-group">
                     <label>Email</label>
-                    <input name="email" required type="email" value={state.userInfo.email} onChange={onChangeValue} placeholder="Enter your email"/>
+                    <input className='form-control' name="email" required type="email" value={state.userInfo.email} onChange={onChangeValue} placeholder="Enter your email"/>
                 </div>
-                <div className="form-control">
+                <div className="form-group">
                     <label>Password</label>
-                    <input name="password" required type="password" value={state.userInfo.password} onChange={onChangeValue} placeholder="Enter your password"/>
+                    <input className='form-control' name="password" required type="password" value={state.userInfo.password} onChange={onChangeValue} placeholder="Enter your password"/>
                 </div>
                 {errorMsg}
                 {successMsg}
-                <div className="form-control">
+                <div className="_navBtnLogin">
                     <button type="submit">Sign Up</button>
                 </div>
             </form>
