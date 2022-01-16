@@ -4,7 +4,7 @@ import './index.css';
 import "./bootstrap-override.scss";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Navbar from './components/Navbar'
+
 
 ReactDOM.render(<div>
     <App />
